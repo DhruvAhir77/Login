@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@media(max-width:998rem)
+{
+  html 
+  {
+    font-size: 55%;
+  }
+}
+@media(max-width:768rem)
+{
+  html 
+  {
+    font-size: 45%;
+  }
+}
+html
+{
+  font-size: 6.25%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  background:  linear-gradient(to bottom right, blue, pink);
+  padding: 0;
+  /* background: url("pexels-nikita-belokhonov-6066072.jpg"); */
+  height: 100vh;
+  overflow: hidden;
+  background-size  :1550px;
+    background-position:right 20%;
+    background-position-x: center;
+}
+.clogo
+{
+    position: absolute;
+    color:ghostwhite;
+    height: 10px;
+    width: 10px;
+    left: 26px;
+    top: 9px;
+}
+.nav
+{
+    /* position: fixed; */
+    height: 64px;
+    background: conic-gradient(rgb(204, 183, 68),rgb(151, 69, 69) );
+    /* background: url("72da8e918336efe1313e62f05f090e08.jpg"); */
+    transition-property:initial;
+    text-align: right;
+
+}
+.st{
+  display: inline-block;
+  margin: 12px;
+  margin-top: 0px;
+  margin-right: 30px;
+  font-size:xx-large;
+  border: 5px solid wheat;
+  color:ghostwhite;
+  padding: 10px;
+  border-radius: 30px;
+  border-width: 0px;
+  
+}
+#mid
+{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 20px;
+  
+  margin-right: 50px;
+  font-size: 30px;
+  color:ghostwhite;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 420px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.center h1{
+  font-size:xx-large;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+  font-size:smaller;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.footer {
+  background: conic-gradient(from 180deg,rgb(151, 69, 69) , rgb(204, 183, 68));
+  position: relative;
+  top: 83.7vh;
+  /* left: 7vh; */
+  height: 79px;
+  /* background:url("72da8e918336efe1313e62f05f090e08.jpg"); */
+  background-position:bottom;
+}
+.footer p{
+  /* background-color: red; */
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  font-size: large;
+  color: ghostwhite;
+}
