@@ -1,0 +1,207 @@
+:root {
+    --wid: 100%;
+    
+  }
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    max-height: 100%;   
+    max-width: 100%;
+    background:  linear-gradient(to bottom right, blue, pink);
+    }
+.header
+{
+    
+    top: 0%;
+    margin-top: 0;
+    margin: 0;
+    height: 10vh;
+    min-width: 100%;
+    position:relative;
+    max-width: 100%;
+    max-height: 100%;
+    background: conic-gradient(rgb(204, 183, 68),rgb(151, 69, 69) );
+}
+#img_logo
+{
+    
+    max-width: 40px;
+    max-height: 40px;
+    height: 100%; width: 100%;
+    float: left;
+    margin-left: 2.5vh;
+    margin-top: 2.5vh;
+    position:absolute ;
+    border-radius: 20%;
+}
+/* #img_comp_name
+{
+    
+    max-width: var(--wid);
+    max-height: var(--wid);
+    height: 30px;width: 30px;
+    float:none;
+    border-radius: 55%;
+    margin-top: 3.5vh;
+    position: absolute;
+    margin-left: 47.5%;
+        
+
+} */
+#header_button
+{
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    max-width: var(--wid);
+    max-height: var(--wid);
+    height: 30px;width: 30px;
+    text-align: center;
+    float: right;
+    
+    background-color: none;
+    background: none;
+    border-radius: 20%;
+    border: none;
+}
+
+/* ----------------------------------------------------------- */
+
+.footer {
+    background: conic-gradient(from 180deg,rgb(151, 69, 69) , rgb(204, 183, 68));
+    position: absolute;
+    top: 90%;
+    height: 10vh;
+    background-position:bottom;
+    width: 100%;
+  }
+  .footer p
+  {
+    margin-top: 2vh;
+    margin-left: 3vh;
+    font-size:  2vh 2vw;
+  }
+
+
+/* ---------------------------------------------------------------- */
+
+.middle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.5vh;
+    height: 52.5vh;
+    background: white;
+    border-style:ridge;
+    border-color: ghostwhite;
+    border-radius: 1.25vh;
+    box-shadow: 1.25vh 1.25vh 1.875vh rgba(0,0,0,0.05);   
+}
+.middle h1
+{
+  font-size: calc( xx-large/8);
+  text-align: center;
+  padding: 1.5vh 0;
+  border-bottom: .125vh solid silver;
+}
+.middle form
+{
+    padding: 0 5vh;
+    box-sizing: border-box;
+
+}
+form .txt_field
+{
+    position: relative;
+    border-bottom: .25vh solid #adadad;
+    margin: 3.75vh 0;
+}
+.txt_field input
+{
+    width: 100%;
+  padding: 0 .625vh;
+  height: 5vh;
+  font-size: 2vh;
+  border: none;
+  background: none;
+  outline: none; 
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: .625vh;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 2vh;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    width: 0%;
+    height: .25vh;
+    background: #2691d9;
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -.625vh;
+    color: #2691d9;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  .forgot{
+   
+    color: #a6a6a6;
+    cursor: pointer;
+    font-size:smaller;
+    text-decoration: none;
+  }
+  .forgot a
+  {
+    margin-top: -.500vh;
+  }
+  .forgot:hover{
+    text-decoration: underline;
+  }
+  input[type="submit"]{
+    width: 100%;
+    height: 6.25vh;
+    border: .125vh solid;
+    background: #2691d9;
+    border-radius: 3.125vh;
+    font-size: 2.25vh;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }
+  .Sign_up
+  {
+    margin: 3.75vh 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vh;
+    color: #666666;
+  }
+  .Sign_up a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  .Sign_up a:hover{
+    text-decoration: underline;
+  }
